@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true
+
+  datasource:
+    dbcp2:
+      validation-query: select 1
+      driver-class-name: org.mysql
+logging:
+  file: target/app.log
+  level:
+    ROOT: WARN
+    cn.devmgr: TRACE
